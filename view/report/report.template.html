@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="view/report/report.template.css" type="text/css"/>
-<div class="report" ng-style="{'height': $ctrl.layout.height + '%'}">
-  qDocId: {{$ctrl.qDocId}}
+<div class="report" ng-style="{'height': $ctrl.layout.height + 'vh'}">
+  <div class="cell" ng-repeat="cell in $ctrl.layout.cells" ng-style="{'left': cell.bounds.x + '%', 'top': cell.bounds.y + '%', 'height': 'calc(' + cell.bounds.height + '% - 10px)', 'width': 'calc(' + cell.bounds.width + '% - 10px)'}">{{cell.type}}</div>
 </div>
