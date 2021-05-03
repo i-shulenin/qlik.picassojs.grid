@@ -1,0 +1,35 @@
+{
+  "name": "qlik.picassojs.grid",
+  "version": "1.0.0",
+  "description": "Использую grid для расположения визуализаций на странице",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-shulenin/qlik.picassojs.grid.git"
+  },
+  "scripts": {
+    "postinstall": "cpx \"node_modules/{angular,angular-*,picasso.js/dist,leonardo-ui/dist}/**/*\" lib -C"
+  },
+  "keywords": [
+    "qlik",
+    "picasso.js",
+    "grid",
+    "angularjs",
+    "leonardo-ui"
+  ],
+  "author": "Ilya Shulenin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-shulenin/qlik.picassojs.grid/issues"
+  },
+  "homepage": "https://github.com/i-shulenin/qlik.picassojs.grid#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-resource": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "leonardo-ui": "^1.7.1",
+    "picasso.js": "^1.0.0"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0"
+  }
+}
